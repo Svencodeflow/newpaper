@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: "cormo";
+    src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
+}
+
+/* header */
+
+section:nth-of-type(1) h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 20px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    padding: 10px;
+    border-top-style: double;
+    border-bottom-style: double;
+}
+
+header section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+}
+
+header section:nth-of-type(2) h1 {
+    font-size: 4rem;
+    /* padding-right: 90px; */
+}
+
+header section:nth-of-type(2) p {
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+
+.gridmaster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    width: 40vw;
+    margin-top: 6em;
+    gap: 3%;
+}
+
+.gridmaster h2 {
+    font-size: 3rem;
+}
+
+.gridmaster p {
+    font-size: 1.5rem;
+    width: 75%;
+}
+
+.bild div figure img  {
+    width: 500px;
+    height: 600px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 50vh;
+}
+
+.sidebar div {
+    border-style: double;
+    /* width: 40%; */
+    padding: 30px;
+}
+
+.sidebar h3 {
+    font-size: 4rem;
+    /* text-align: center; */
+    /* align-self: center; */
+    justify-self:  center;
+    width: 40%;
+    /* padding: 30px; */
+}
+
+.sidebar p {
+    width: 40%;
+}
+
+.sidebar div img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
